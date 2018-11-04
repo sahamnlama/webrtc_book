@@ -113,9 +113,9 @@ function start() {
   // create the WebRTC peer connection object
   peer_connection = new rtc_peer_connection({ // RTCPeerConnection configuration
     "iceServers": [ // information about ice servers
-      {'url': "stun:stun.example.com"}, {"url":"stun:stun-1.example.com"},
-      { "url": "stun:"+stun_server }, // stun server info
-      {
+      {'url': "stun:stun.example.com"}, {"url":"stun:stun-1.example.com"}
+      //{ "url": "stun:"+stun_server }, // stun server info
+      /*{
         'url': 'turn:192.158.29.39:3478?transport=udp',
         'credential': 'JZEOEt2V3Qb0y27GRntt2u2PAYA=',
         'username': '28224511:1379330808'
@@ -124,7 +124,7 @@ function start() {
         'url': 'turn:192.158.29.39:3478?transport=tcp',
         'credential': 'JZEOEt2V3Qb0y27GRntt2u2PAYA=',
         'username': '28224511:1379330808'
-      }
+      }*/
     ]
   });
 
