@@ -125,7 +125,7 @@ function start() {
   // create the WebRTC peer connection object
   peer_connection = new rtc_peer_connection({ // RTCPeerConnection configuration
     "iceServers": [ // information about ice servers
-      {'urls': "stun:stun.example.com"}, {"url":"stun:stun-1.example.com"}
+      {'urls': "stun:stun.example.com"}, {"urls":"stun:stun-1.example.com"}
       //{ "url": "stun:"+stun_server }, // stun server info
       /*{
         'url': 'turn:192.158.29.39:3478?transport=udp',
