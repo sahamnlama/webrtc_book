@@ -526,7 +526,8 @@ function close_window(){
 	  if (confirm("Are you sure you want to close video chat")) {
     		var socket = io('https://owl360signellingsvr.herokuapp.com');
             	socket.emit("close_video_chat", "close_video_chat");
-		window.close();
+		setTimeout(function(){window.close();},2000);
+		
   	} else {
     		//alert("You pressed Cancel!");
   	}
