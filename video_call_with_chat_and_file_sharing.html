@@ -554,12 +554,20 @@ html, body {
 }
 #chat {
   position: absolute;
-  top: 0px;
+  top: 60px;
   left: 1024px;
-  height: 768px;
+  height: 700px;
   width: 300px;
   background: #CCCCCC;
 }
+	
+	#close_div{
+		  position: absolute;
+  		top: 0px;
+  	left: 1024px;
+  	height: 50px;
+  	width: 300px;
+	}
 #messages {
   overflow: auto;
   position: absolute;
@@ -643,7 +651,8 @@ html, body {
   <div id="open_call_state">
     <video id="remote_video" autoplay playsinline></video>
     <video id="local_video" autoplay playsinline></video>
-	  <div><button id="closeBtn">Close</button></div>
+	  <div id="close_div"><button id="closeBtn">Close</button></div>
+
     <div id="chat" style="visibility:hidden">
       <div id="messages"></div>
       <input type="text" id="message_input" value="Type here then hit enter..."></input>
