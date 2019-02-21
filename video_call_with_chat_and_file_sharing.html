@@ -114,7 +114,7 @@ function start() {
   // setup generic connection to the signaling server using the WebSocket API
   console.log("setting up connection to signaling server");
   var host = location.origin.replace(/^https/, 'wss');
-  signaling_server = new WebSocket(host||"owl360signellingsvr.herokuapp.com");
+  signaling_server = new WebSocket(host||"https://owl360videochatsvr.herokuapp.com");
 
   if (document.location.hash === "" || document.location.hash === undefined) { // you are the Caller
     console.log("you are the Caller");
