@@ -523,7 +523,11 @@ function log_error(error) {
 	
 function close_window(){
 	console.log("close");
-	alert();
+	  if (confirm("Are you sure you want to close video chat")) {
+    		alert("You pressed OK!");
+  	} else {
+    		alert("You pressed Cancel!");
+  	}
 	console.log("close");
 }
 
