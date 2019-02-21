@@ -520,6 +520,10 @@ function display_file(event) {
 function log_error(error) {
   console.log(error);
 }
+	
+function close_window(){
+	alert();
+}
 
 </script>
 <style>
@@ -654,7 +658,7 @@ html, body {
   <div id="open_call_state">
     <video id="remote_video" autoplay playsinline></video>
     <video id="local_video" autoplay playsinline></video>
-	  <div id="close_div"><button id="closeBtn">Close</button></div>
+	  <div id="close_div"><button id="closeBtn" onclick="close_window();">Close</button></div>
 
     <div id="chat" style="visibility:hidden">
       <div id="messages"></div>
